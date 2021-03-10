@@ -83,7 +83,11 @@
           <p>מינוי דיגיטלי ב-<span class="blue-text">₪29.90</span></p>
         </div>
         <div class="infoBox-text-sale earase"><p>במקום ₪49.90</p></div>
-        <div class="infoBox-button" onclick="handleClick()">
+        <div class="infoBox-text-sale ">
+          <!-- <p><span class="red-text-dark bold">40 אחוז הנחה</span>לזמן מוגבל</p> -->
+          <h3>40 אחוז הנחה לזמן מוגבל</h3>
+        </div>
+        <!-- <div class="infoBox-button" onclick="handleClick()">
           <button>
             להצטרפות
             <span class="arrows">
@@ -91,13 +95,131 @@
               <i class="arrow-2 left"></i>
             </span>
           </button>
+        </div> -->
+      </div>
+      <!-- BOX-SECTION-START -->
+      <div class="box-section">
+        <div class="box-section-right">
+          <!-- DETAILS-START -->
+          <div class="details">
+            <h3 class="details-title">מה כולל מינוי דיגיטלדת בגלובס</h3>
+            <ul class="details-list">
+              <li class="details-item">
+                <i class="details-item-check">
+                  <img src="./images/check-red.svg" alt="check-sign" />
+                </i>
+
+                גישה חופשית מלאה לכל תכני גלובס באתר ובאפליקציה
+              </li>
+              <li class="details-item">
+                <i class="details-item-check">
+                  <img src="./images/check-red.svg" alt="check-sign" />
+                </i>
+
+                גלובס שלי – כתבות בנושאים שמעניינים אותי, ניוזלטרים ורשימת קריאה
+              </li>
+            </ul>
+          </div>
+          <button class="accordion">תנאי רכישה</button>
+          <div class="panel" style="display: none;">
+            <p>
+              מחזורי החיוב במסלול זה הם עבור חודשים יחסיים, כלומר "חודש" הוא 30
+              ימים מיום ביצוע המינוי. במסלול זה חל תעריף חודשי מוזל ל-12 חודשים.
+              בכל חודש נגבה תשלום בסך 29.90 ₪. ניתן להפסיק את המינוי בכל עת.
+              התעריף המוזל יעמוד בתוקפו למשך 12 חודשים. לאחר מכן המחיר יתעדכן
+              למחיר המינוי הדיגיטלי המלא, כפי שיתפרסם אותה עת בגלובס. נודיע לכם
+              על עדכון המחיר מראש בדואר האלקטרוני. המינוי הינו אישי ואינו ניתן
+              להעברה או לשימוש על ידי גורם אחר.
+            </p>
+          </div>
+          <!-- DETAILS-END -->
+        </div>
+
+        <div class="box-section-left">
+          <form
+            action="https://app.powerlink.co.il/web/webtoaccount.aspx"
+            method="post"
+            class="form"
+            id="bottom"
+          >
+            <h2 class="form-title">השאירו פרטים</h2>
+
+            <!-- <p>או חייגו עכשיו</p> -->
+            <a href="tel:*5988" class="form-contact">או חייגו עכשיו: 5988*</a>
+
+            <input
+              type="hidden"
+              id="returnpath"
+              name="returnpath"
+              value="http://www.google.com"
+            />
+            <input
+              type="hidden"
+              id="uid"
+              name="uid"
+              value="4B22C32E-0676-4ECA-B623-F82F24C927CD"
+            />
+            <input
+              id="telephone1"
+              name="telephone1"
+              value=""
+              placeholder="טלפון"
+              type="tel"
+              pattern="[0-9-]{8,10}"
+              class="form-input"
+            />
+            <input
+              type="text"
+              id="accountname"
+              name="accountname"
+              value=""
+              placeholder="שם מלא"
+              class="form-input"
+            />
+            <!-- <input
+              id="emailaddress1"
+              name="emailaddress1"
+              value=""
+              type="email"
+              placeholder="דואל"
+              class="form-input"
+            /> -->
+            <!-- סטטוס -->
+            <input
+              type="hidden"
+              id="statuscode"
+              name="statuscode"
+              value="6"
+              class="form-input"
+            />
+
+            <!-- תת סטטוס -->
+            <input
+              type="hidden"
+              id="actionstatuscode"
+              name="actionstatuscode"
+              value="1"
+              class="form-input"
+            />
+            <!-- מקור הגעה -->
+            <input
+              type="hidden"
+              id="originatingleadcode"
+              name="originatingleadcode"
+              value="7"
+              class="form-input"
+            />
+            <input type="submit" value="תחזרו אליי" class="form-submit" />
+          </form>
         </div>
       </div>
+
+      <!-- BOX-SECTION-END -->
 
       <div class="popup">
         <div class="popup-overlay" onclick="handleClick()"></div>
         <div class="popup-form">
-          <form
+          <!-- <form
             class="form"
             id="bottom"
             action="https://app.powerlink.co.il/web/webtoaccount.aspx"
@@ -112,26 +234,26 @@
               name="uid"
               value="6B0A385F-2E47-4E78-A2BD-1725AD323582"
             />
-            <input type="hidden" name="adname" id="adname" value="" />
-            <!-- location -->
-            <input
+            <input type="hidden" name="adname" id="adname" value="" /> -->
+          <!-- location -->
+          <!-- <input
               type="hidden"
               name="systemfield12"
               id="systemfield12"
               value="2"
               class="systemfield12"
-            />
-            <!-- site -->
-            <input
+            /> -->
+          <!-- site -->
+          <!-- <input
               type="hidden"
               name="systemfield52"
               id="systemfield52"
               value="26"
               class="systemfield52"
             />
-            <input type="hidden" name="adsetname" id="adsetname" value="" />
-            <!-- from -->
-            <input
+            <input type="hidden" name="adsetname" id="adsetname" value="" /> -->
+          <!-- from -->
+          <!-- <input
               name="originatingleadcode"
               type="hidden"
               id="originatingleadcode"
@@ -170,25 +292,44 @@
               required
             />
             <button type="submit" class="form-submit">שלח</button>
-          </form>
+          </form> -->
         </div>
       </div>
-      <!-- <button class="accordion">תנאי רכישה</button>
-      <div class="panel" style="display: none;">
-        <p>
-          מחזורי החיוב במסלול זה הם עבור חודשים יחסיים, כלומר "חודש" הוא 30 ימים
-          מיום ביצוע המינוי. במסלול זה חל תעריף חודשי מוזל ל-12 חודשים. בכל חודש
-          נגבה תשלום בסך 29.90 ₪. ניתן להפסיק את המינוי בכל עת. התעריף המוזל
-          יעמוד בתוקפו למשך 12 חודשים. לאחר מכן המחיר יתעדכן למחיר המינוי
-          הדיגיטלי המלא, כפי שיתפרסם אותה עת בגלובס. נודיע לכם על עדכון המחיר
-          מראש בדואר האלקטרוני. המינוי הינו אישי ואינו ניתן להעברה או לשימוש על
-          ידי גורם אחר.
-        </p>
-      </div> -->
+
       <!-- MAIN HEADER END -->
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <ul class="footer-links">
+        <!--<li><a href="/news/client_service/clients_service.aspx" target="_blank">שירות לקוחות </a></li>
+            <span class="line">|</span>
+            <li><a href="/news/home.aspx?fid=11128" target="_blank">שאלות ותשובות</a></li>
+            <span class="line">|</span>-->
+        <li>
+          <a
+            href="/news/article.aspx?did=1001243948"
+            target="_blank"
+            class="private_policy"
+            >מדיניות פרטיות</a
+          >
+        </li>
+        <span class="line">|</span>
+        <li>
+          <a
+            href="/news/article.aspx?did=1000252043&amp;fid=3038"
+            target="_blank"
+            class="term_of_use"
+          >
+            תנאי שימוש</a
+          >
+        </li>
+      </ul>
+      <img
+        src="https://images.globes.co.il/images/mobile/2018/white.svg"
+        class="footer-logoM"
+      />
 
+      <a href="tel:*5988" class="footer-contact">צרו איתנו קשר: 5988*</a>
+    </footer>
     <script>
       // Helper function from: http://stackoverflow.com/a/7557433/274826
       const isElementInViewport = el => {
@@ -251,7 +392,7 @@
       fromArray.map(item => (item.value = from));
     </script>
 
-    <script>
+    <!-- <script>
       // let button = getElementsByClassName('infoBox-button');
       const handleClick = () => {
         let popup = document.getElementsByClassName("popup");
@@ -265,48 +406,54 @@
         //   popup[0].style.display = 'none'
         // }
       };
-    </script>
+    </script> -->
     <!-- ACCORDION HANDLE -->
-    <!-- <script>
-      var acc = document.getElementsByClassName('accordion')
-      var i
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
       for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener('click', function () {
-          this.classList.toggle('active')
-          var panel = this.nextElementSibling
-          if (panel.style.display === 'block') {
-            panel.style.display = 'none'
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
           } else {
-            panel.style.display = 'block'
+            panel.style.display = "block";
           }
-        })
+        });
       }
-    </script> -->
+    </script>
 
-    <script>
+    <!-- <script>
       let dde = document.documentElement;
       dde.addEventListener("mousemove", e => {
         let lWidth = window.screen.width;
         let ow = dde.offsetWidth;
         let oh = dde.offsetHeight;
-        let back = document.getElementsByClassName("infoBox-section");
+        let back = document.getElementsByTagName("main");
+        let form = document.getElementsByTagName("form");
         // dde.style.setProperty("--mouseX", (e.clientX * 100) / ow + "%");
         // dde.style.setProperty("--mouseY", (e.clientY * 100) / oh + "%");
         // debugger;
 
         if (lWidth > 1000) {
           back[0].style.backgroundPosition =
-            (e.clientX * 50) / ow +
-            1400 +
+            (e.clientX * 5) / ow +
+            50 +
             "%" +
             " " +
-            ((e.clientY * 300) / oh + 3540) +
+            ((e.clientY * 10) / oh + 40) +
             "%";
-          // console.log(dde.offsetHeight);
-          // (e.clientY * 100) / oh + "%";
+          form[0].style.backgroundPosition =
+            (e.clientX * 5) / ow +
+            50 +
+            "%" +
+            " " +
+            ((e.clientY * 10) / oh + 40) +
+            "%";
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>

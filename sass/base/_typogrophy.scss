@@ -16,6 +16,18 @@ body {
 .blue-text {
   color: $color-blue;
 }
+.red-text-dark {
+  color: $color-red-dark;
+}
+.red-text {
+  color: $color-red;
+}
+.bold {
+  font-weight: bolder;
+}
+span.red-text-dark.bold {
+  margin-left: 1rem;
+}
 
 .earase {
   -webkit-text-decoration-line: line-through; /* Safari */

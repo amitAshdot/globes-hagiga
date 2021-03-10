@@ -372,6 +372,7 @@ main {
 
   @include respond(mini-desktop) {
     font-size: 1.92rem;
+    overflow: hidden;
   }
   &-right {
     width: 55%;

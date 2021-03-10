@@ -92,6 +92,14 @@ main {
   &.active {
     background: #96153f;
     color: white;
+
+    & > .arrow {
+      transform: rotate(45deg);
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      margin-right: 0.3rem;
+      margin-bottom: 0.2rem;
+    }
   }
 }
 .panel {
@@ -203,14 +211,15 @@ main {
   position: relative;
 }
 .arrow {
-  border: solid white;
+  border: solid black;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
 
   left: -53px;
   top: 50%;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
+  transform: rotate(135deg);
 
   @include respond(big-desktop) {
     left: -57px;

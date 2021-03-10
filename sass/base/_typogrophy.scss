@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "nextexitfot";
+  src: url("../../fonts/nextexitfot-light-webfont.woff.ttf");
+}
+
+body {
+  font-family: "nextexitfot", cursive;
+  font-weight: 400;
+  font-size: $defaut-font-size;
+  line-height: 1.7;
+}
+
+.white-text {
+  color: $color-white-real;
+}
+.blue-text {
+  color: $color-blue;
+}
+
+.earase {
+  -webkit-text-decoration-line: line-through; /* Safari */
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1px;
+}

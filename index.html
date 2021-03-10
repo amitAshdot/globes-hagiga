@@ -1,0 +1,307 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="מידע עסקי ופיננסי מעודכן במגוון נושאים: הבורסה בתל אביב, וול סטריט ושוקי עולם, ביטוח ופיננסים, היי טק, צרכנות, משפט, ספורט, סביבה ועוד "
+    />
+    <meta name="msapplication-tooltip" content="גלובס זירת העסקים של ישראל" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/index.css"
+      media="screen"
+    />
+    <title>
+      מינוי דיגיטלי יומולדת - גלובס
+    </title>
+    <meta name="keywords" content="Targetcall, טרגטקול, טרגט קול" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://images.globes.co.il/globes/icons/favicon2019-he.png"
+      sizes="64x64"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://amitashdot.github.io/targetCall-landing/images/main-image-desktop.jpg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://amitashdot.github.io/targetCall-landing/images/main-image-mobile.jpg"
+    />
+  </head>
+
+  <body>
+    <!-- <header class="header">
+      <a href="/" class="header-loggo">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="https://images.globes.co.il/images/site/top50/logo-gimel.svg"
+          />
+          <img
+            src="https://images.globes.co.il/globes/paywall/globesNew.svg"
+            alt="logo"
+            class="logo--img"
+          />
+        </picture>
+      </a>
+      <span class="header-title mobile">רכישת מינוי דיגיטלי</span>
+      <a href="tel:*5988" class="header-contact">צרו איתנו קשר: 5988*</a>
+    </header> -->
+    <main>
+      <!-- MAIN HEADER START -->
+      <!-- <div class="bar-section">
+        <div class="bar__right">
+          <div class="bar__right-title"></div>
+          <div class="bar__right-subtitle">
+            אנחנו חוגגים ואתם נהנים
+          </div>
+        </div>
+        <div class="bar__left">
+          <div class="bar__left-img"></div>
+        </div>
+      </div> -->
+
+      <div class="infoBox-section">
+        <div class="infoBox-image"></div>
+        <div class="infoBox-title">
+          <h2>אנחנו חוגגים ואתם מרוויחים</h2>
+        </div>
+        <div class="infoBox-text">
+          <p>מינוי דיגיטלי ב-<span class="blue-text">₪29.90</span></p>
+        </div>
+        <div class="infoBox-text-sale earase"><p>במקום ₪49.90</p></div>
+        <div class="infoBox-button" onclick="handleClick()">
+          <button>
+            להצטרפות
+            <span class="arrows">
+              <i class="arrow left"></i>
+              <i class="arrow-2 left"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup-overlay" onclick="handleClick()"></div>
+        <div class="popup-form">
+          <form
+            class="form"
+            id="bottom"
+            action="https://app.powerlink.co.il/web/webtoaccount.aspx"
+            method="post"
+            accept-charset="utf-8"
+          >
+            <h2 class="form-title">השאירו פרטים</h2>
+
+            <input
+              type="hidden"
+              id="uid"
+              name="uid"
+              value="6B0A385F-2E47-4E78-A2BD-1725AD323582"
+            />
+            <input type="hidden" name="adname" id="adname" value="" />
+            <!-- location -->
+            <input
+              type="hidden"
+              name="systemfield12"
+              id="systemfield12"
+              value="2"
+              class="systemfield12"
+            />
+            <!-- site -->
+            <input
+              type="hidden"
+              name="systemfield52"
+              id="systemfield52"
+              value="26"
+              class="systemfield52"
+            />
+            <input type="hidden" name="adsetname" id="adsetname" value="" />
+            <!-- from -->
+            <input
+              name="originatingleadcode"
+              type="hidden"
+              id="originatingleadcode"
+              value="49"
+              class="originatingleadcode"
+            />
+            <input
+              type="hidden"
+              id="retURL"
+              name="retURL"
+              value="/thankyou.html"
+            />
+            <input
+              name="accountname"
+              id="accountname"
+              type="text"
+              placeholder="שם מלא"
+              class="form-input"
+              required=""
+            />
+            <input
+              name="telephone1"
+              id="telephone1"
+              type="tel"
+              pattern="[0-9-]{8,10}"
+              placeholder="טלפון"
+              class="form-input"
+              required=""
+            />
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="דואל"
+              class="form-input"
+              required
+            />
+            <button type="submit" class="form-submit">שלח</button>
+          </form>
+        </div>
+      </div>
+      <!-- <button class="accordion">תנאי רכישה</button>
+      <div class="panel" style="display: none;">
+        <p>
+          מחזורי החיוב במסלול זה הם עבור חודשים יחסיים, כלומר "חודש" הוא 30 ימים
+          מיום ביצוע המינוי. במסלול זה חל תעריף חודשי מוזל ל-12 חודשים. בכל חודש
+          נגבה תשלום בסך 29.90 ₪. ניתן להפסיק את המינוי בכל עת. התעריף המוזל
+          יעמוד בתוקפו למשך 12 חודשים. לאחר מכן המחיר יתעדכן למחיר המינוי
+          הדיגיטלי המלא, כפי שיתפרסם אותה עת בגלובס. נודיע לכם על עדכון המחיר
+          מראש בדואר האלקטרוני. המינוי הינו אישי ואינו ניתן להעברה או לשימוש על
+          ידי גורם אחר.
+        </p>
+      </div> -->
+      <!-- MAIN HEADER END -->
+    </main>
+    <footer class="footer"></footer>
+
+    <script>
+      // Helper function from: http://stackoverflow.com/a/7557433/274826
+      const isElementInViewport = el => {
+        const pixFromElementTop = 1;
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+        }
+        let rect = el.getBoundingClientRect();
+        return (
+          (rect.top + pixFromElementTop <= 0 && rect.bottom >= 0) ||
+          (rect.bottom + pixFromElementTop >=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top + pixFromElementTop <=
+              (window.innerHeight || document.documentElement.clientHeight)) ||
+          (rect.top + pixFromElementTop >= 0 &&
+            rect.bottom + pixFromElementTop <=
+              (window.innerHeight || document.documentElement.clientHeight))
+        );
+      };
+      // Detect request animation frame
+      let scroll =
+        window.requestAnimationFrame ||
+        // IE Fallback
+        function(callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      let elementsToShow = document.querySelectorAll(".show-on-scroll");
+
+      const loop = () => {
+        Array.prototype.forEach.call(elementsToShow, function(element) {
+          if (isElementInViewport(element)) {
+            element.classList.add("is-visible");
+          } else {
+            element.classList.remove("is-visible");
+          }
+        });
+
+        scroll(loop);
+      };
+
+      // Call the loop for the first time
+      loop();
+
+      //get url params
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const locationNum = urlParams.get("locationNum");
+      const site = urlParams.get("site");
+      const from = urlParams.get("from");
+      let inputLocation = document.getElementsByClassName("systemfield12");
+      let inputSite = document.getElementsByClassName("systemfield52");
+      let inputFrom = document.getElementsByClassName("originatingleadcode");
+
+      let locationArray = [...inputLocation];
+      let siteArray = [...inputSite];
+      let fromArray = [...inputFrom];
+      locationArray.map(item => (item.value = locationNum));
+      siteArray.map(item => (item.value = site));
+      fromArray.map(item => (item.value = from));
+    </script>
+
+    <script>
+      // let button = getElementsByClassName('infoBox-button');
+      const handleClick = () => {
+        let popup = document.getElementsByClassName("popup");
+        popup[0].classList.toggle("show");
+
+        // if (popup[0].style.opacity === '0' || popup[0].style.opacity === '') {
+        //   popup[0].style.opacity = '1'
+        //   popup[0].style.display = 'block'
+        // } else {
+        //   popup[0].style.opacity = '0'
+        //   popup[0].style.display = 'none'
+        // }
+      };
+    </script>
+    <!-- ACCORDION HANDLE -->
+    <!-- <script>
+      var acc = document.getElementsByClassName('accordion')
+      var i
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active')
+          var panel = this.nextElementSibling
+          if (panel.style.display === 'block') {
+            panel.style.display = 'none'
+          } else {
+            panel.style.display = 'block'
+          }
+        })
+      }
+    </script> -->
+
+    <script>
+      let dde = document.documentElement;
+      dde.addEventListener("mousemove", e => {
+        let lWidth = window.screen.width;
+        let ow = dde.offsetWidth;
+        let oh = dde.offsetHeight;
+        let back = document.getElementsByClassName("infoBox-section");
+        // dde.style.setProperty("--mouseX", (e.clientX * 100) / ow + "%");
+        // dde.style.setProperty("--mouseY", (e.clientY * 100) / oh + "%");
+        // debugger;
+
+        if (lWidth > 1000) {
+          back[0].style.backgroundPosition =
+            (e.clientX * 50) / ow +
+            1400 +
+            "%" +
+            " " +
+            ((e.clientY * 300) / oh + 3540) +
+            "%";
+          // console.log(dde.offsetHeight);
+          // (e.clientY * 100) / oh + "%";
+        }
+      });
+    </script>
+  </body>
+</html>

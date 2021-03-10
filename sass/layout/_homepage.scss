@@ -1,0 +1,309 @@
+.desktop {
+  display: block;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+  @include respond(tab-port) {
+    display: block;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 25rem;
+}
+
+.bar-section {
+  background-color: $color-primary;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 25rem;
+}
+.bar {
+  &__right {
+    &-title {
+      background: url("../../images/hagiga.svg");
+      width: 271px;
+      height: 63px;
+    }
+    &-subtitle {
+    }
+  }
+  &__left {
+    position: relative;
+
+    &-img {
+      background: url("../../images/cloud.png");
+      content: "";
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 278px;
+      height: 258px;
+      top: 16px;
+      left: 8%;
+    }
+  }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  // transition: 0.4s;
+
+  .active,
+  &:hover {
+    background-color: #ccc;
+  }
+}
+.panel {
+  font-size: 1.4rem;
+}
+
+// .package--details::after {
+//   content: '';
+//   border: solid #1a1a1a;
+//   border-width: 0 1px 1px 0;
+//   padding: 3px;
+//   transform: rotate(45deg);
+//   -webkit-transform: rotate(45deg);
+//   transition: transform 0.3s ease;
+//   position: absolute;
+//   margin-right: 10px;
+//   top: 50%;
+// }
+
+.infoBox-section {
+  color: $color-white-real;
+  background: url("../../images/baloon-01.png") repeat $color-primary;
+  background-size: cover;
+
+  // background-color: $color-primary;
+  padding: 20rem 3rem 3rem;
+  background-position-y: 240px;
+  background-position-x: 0px;
+
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 50rem;
+  place-items: center;
+  margin: auto;
+  font-size: 3rem;
+  line-height: 4.5rem;
+
+  @include respond(mini-desktop) {
+    background-position-y: 190px;
+    background-position-x: 20px;
+  }
+}
+.infoBox {
+  &-image {
+    background: url("../../images/hagiga.svg");
+    width: 34rem;
+    height: 8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+  &-title {
+    // font-family: "almoniDL400";
+    // font-weight: 100;
+    // font-size: 2.7rem;
+    overflow: hidden;
+    overflow-y: hidden;
+
+    // color: $color-white-real;
+  }
+  &-text {
+    font-size: 5.4rem;
+    line-height: 4.5rem;
+    overflow: hidden;
+    font-weight: bold;
+    overflow: hidden;
+    &-sale {
+      font-size: 4rem;
+    }
+  }
+  &-button {
+    box-shadow: 2px 2px 3px 1px #00000057;
+    font-family: "nextexitfot";
+  }
+  &-button > button {
+    background: $color-red;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    box-shadow: 10px 5px 5px black;
+    font-family: "nextexitfot";
+
+    // transition: all 0.s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover > .arrows > .arrow {
+      left: -48px;
+    }
+    &:hover > .arrows > .arrow-2 {
+      left: -55px;
+    }
+
+    @include respond(big-desktop) {
+      &:hover > .arrows > .arrow {
+        left: -70px;
+      }
+      &:hover > .arrows > .arrow-2 {
+        left: -60px;
+      }
+    }
+  }
+}
+.arrows {
+  position: relative;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+
+  left: -53px;
+  top: 50%;
+  transition: all 0.5s ease;
+
+  @include respond(big-desktop) {
+    left: -57px;
+    padding: 4px;
+  }
+
+  @include respond(mini-desktop) {
+    left: -43px;
+  }
+
+  &-2 {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+
+    left: -48px;
+    top: 50%;
+    transition: all 0.55s ease;
+    @include respond(big-desktop) {
+      left: -66px;
+      padding: 4px;
+    }
+
+    @include respond(mini-desktop) {
+      left: -38px;
+    }
+  }
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg) translate(0px, 60%);
+  position: absolute;
+}
+
+.popup {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.2s ease-in-out;
+
+  &-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.3);
+    z-index: 5;
+    transition: all 0.2s ease;
+  }
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.form {
+  background: $color-primary;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 40rem;
+  place-items: center;
+  margin: auto;
+  border: 1px solid white;
+
+  padding: 3rem;
+  z-index: 10;
+  font-family: "nextexitfot";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+
+  &-title {
+    color: white;
+    font-size: 4rem;
+  }
+  &-input {
+    width: 90%;
+    height: 5rem;
+    margin: 0.5rem;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "nextexitfot";
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover::placeholder {
+      color: $color-primary;
+    }
+  }
+
+  &-submit {
+    background: $color-red;
+    color: white;
+    font-size: 3rem;
+
+    width: 90%;
+    height: 5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "nextexitfot";
+
+    position: relative;
+    transition: all 0.5s;
+    @include shine($color-red-dark);
+  }
+}

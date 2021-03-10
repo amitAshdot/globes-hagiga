@@ -29,7 +29,7 @@
 .bar {
   &__right {
     &-title {
-      background: url("../../images/hagiga.svg");
+      background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga.svg");
       width: 271px;
       height: 63px;
     }
@@ -40,7 +40,7 @@
     position: relative;
 
     &-img {
-      background: url("../../images/cloud.png");
+      background: url("https://amitashdot.github.io/globes-hagiga/images/cloud.png");
       content: "";
       background-size: contain;
       background-repeat: no-repeat;
@@ -89,7 +89,8 @@
 
 .infoBox-section {
   color: $color-white-real;
-  background: url("../../images/baloon-01.png") repeat $color-primary;
+  background: url("https://amitashdot.github.io/globes-hagiga/images/baloon-01.png")
+    repeat $color-primary;
   background-size: cover;
 
   // background-color: $color-primary;
@@ -113,7 +114,7 @@
 }
 .infoBox {
   &-image {
-    background: url("../../images/hagiga.svg");
+    background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga.svg");
     width: 34rem;
     height: 8rem;
     background-size: contain;

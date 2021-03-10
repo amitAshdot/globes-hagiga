@@ -272,7 +272,7 @@ main {
 
 .form {
   background: url(https://amitashdot.github.io/globes-hagiga/images/baloon-01.png)
-    repeat #ef73ab fixed;
+    repeat #ef73ab;
   background-size: contain;
   background-position: -120% -80px;
 
@@ -295,6 +295,10 @@ main {
   transition: all 0.5s ease;
 
   @include respond(mini-desktop) {
+    background: url(https://amitashdot.github.io/globes-hagiga/images/baloon-01.png)
+      repeat #ef73ab fixed;
+    background-size: contain;
+
     width: 100%;
     background-position: -130px -130px;
   }

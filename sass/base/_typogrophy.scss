@@ -28,7 +28,14 @@ body {
 span.red-text-dark.bold {
   margin-left: 1rem;
 }
-
+.full {
+  color: #fff;
+  display: inline-block;
+  padding: 0px 1.25rem;
+  border-radius: 10px;
+  background-color: $color-blue;
+  overflow: hidden;
+}
 .earase {
   -webkit-text-decoration-line: line-through; /* Safari */
   text-decoration-line: line-through;

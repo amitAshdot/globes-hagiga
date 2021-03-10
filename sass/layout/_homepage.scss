@@ -145,22 +145,21 @@ main {
     overflow-y: hidden;
   }
   &-title {
-    // font-family: "almoniDL400";
-    // font-weight: 100;
-    // font-size: 2.7rem;
-    overflow: hidden;
-    overflow-y: hidden;
-
-    // color: $color-white-real;
+    & > h2 {
+      overflow-y: hidden;
+    }
   }
   &-text {
     font-size: 5.4rem;
     line-height: 4.5rem;
     overflow: hidden;
     font-weight: bold;
-    overflow: hidden;
     &-sale {
       font-size: 4rem;
+    }
+
+    & > p {
+      overflow-y: hidden;
     }
   }
   &-button {

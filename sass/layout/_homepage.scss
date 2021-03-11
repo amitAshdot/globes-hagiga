@@ -105,7 +105,7 @@ main {
     & > h2 {
       overflow-y: hidden;
       @include respond(phone-small) {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
       }
       & span {
       }

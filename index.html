@@ -149,22 +149,26 @@
               value="4B22C32E-0676-4ECA-B623-F82F24C927CD"
             />
             <input
-              id="telephone1"
-              name="telephone1"
-              value=""
-              placeholder="טלפון"
-              type="tel"
-              pattern="[0-9-]{8,10}"
-              class="form-input"
-            />
-            <input
               type="text"
               id="accountname"
               name="accountname"
               value=""
               placeholder="שם מלא"
               class="form-input"
+              required
             />
+            <input
+              id="telephone1"
+              name="telephone1"
+              value=""
+              placeholder="טלפון"
+              type="tel"
+              pattern="[0-9-]{8,10}"
+              maxlength="10"
+              class="form-input"
+              required
+            />
+
             <!-- <input
               id="emailaddress1"
               name="emailaddress1"
@@ -199,25 +203,26 @@
               class="form-input"
             />
             <button class="form-submit">תחזרו אליי</button>
+            <div class="accordion-bottom mobileOnly">
+              <p class="accordion ">
+                תנאי רכישה
+                <i class="arrow"></i>
+              </p>
+              <div class="panel" style="display: none;">
+                <p>
+                  מחזורי החיוב במסלול זה הם עבור חודשים יחסיים, כלומר "חודש" הוא
+                  30 ימים מיום ביצוע המינוי. במסלול זה חל תעריף חודשי מוזל ל-12
+                  חודשים. בכל חודש נגבה תשלום בסך 29.90 ₪. ניתן להפסיק את המינוי
+                  בכל עת. התעריף המוזל יעמוד בתוקפו למשך 12 חודשים. לאחר מכן
+                  המחיר יתעדכן למחיר המינוי הדיגיטלי המלא, כפי שיתפרסם אותה עת
+                  בגלובס. נודיע לכם על עדכון המחיר מראש בדואר האלקטרוני. המינוי
+                  הינו אישי ואינו ניתן להעברה או לשימוש על ידי גורם אחר.
+                </p>
+              </div>
+            </div>
           </form>
           <!-- accordion mobile start -->
-          <div class="accordion-bottom mobileOnly">
-            <button class="accordion ">
-              תנאי רכישה
-              <i class="arrow"></i>
-            </button>
-            <div class="panel" style="display: none;">
-              <p>
-                מחזורי החיוב במסלול זה הם עבור חודשים יחסיים, כלומר "חודש" הוא
-                30 ימים מיום ביצוע המינוי. במסלול זה חל תעריף חודשי מוזל ל-12
-                חודשים. בכל חודש נגבה תשלום בסך 29.90 ₪. ניתן להפסיק את המינוי
-                בכל עת. התעריף המוזל יעמוד בתוקפו למשך 12 חודשים. לאחר מכן המחיר
-                יתעדכן למחיר המינוי הדיגיטלי המלא, כפי שיתפרסם אותה עת בגלובס.
-                נודיע לכם על עדכון המחיר מראש בדואר האלקטרוני. המינוי הינו אישי
-                ואינו ניתן להעברה או לשימוש על ידי גורם אחר.
-              </p>
-            </div>
-          </div>
+
           <!-- accordion mobile end -->
         </div>
       </div>

@@ -50,7 +50,7 @@ main {
   transition: 0.2s;
   @include respond(mini-desktop) {
     font-size: 2rem;
-    padding: 0;
+    padding-right: 0.5rem;
   }
   .active,
   &:hover {

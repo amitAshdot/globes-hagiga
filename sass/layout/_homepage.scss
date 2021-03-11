@@ -11,6 +11,11 @@
     display: block;
   }
 }
+header.header {
+  position: absolute;
+  left: 5rem;
+  bottom: 5rem;
+}
 
 main {
   background: url("https://amitashdot.github.io/globes-hagiga/images/baloon-01.png")
@@ -81,7 +86,7 @@ main {
 }
 .infoBox {
   &-image {
-    background: url("https://amitashdot.github.io/globes-hagiga/images/test.png");
+    background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga-new.png");
     width: 34rem;
     height: 9rem;
     background-size: contain;
@@ -246,6 +251,7 @@ main {
     max-width: 150rem;
     width: 100%;
     background-position: -130px -130px;
+    padding: 3.4rem 2rem;
   }
   &-title {
     color: white;

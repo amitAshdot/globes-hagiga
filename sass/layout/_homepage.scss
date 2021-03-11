@@ -308,7 +308,10 @@ main {
     }
 
     &:hover::placeholder {
-      color: $color-primary;
+      color: $color-red;
+    }
+    &::placeholder {
+      color: $color-black;
     }
   }
 
@@ -426,11 +429,8 @@ main {
   margin: auto;
   width: 20rem;
   @include respond(mini-desktop) {
-width: 10rem;
-}
-
-
-
+    width: 10rem;
+  }
 }
 
 .footer {

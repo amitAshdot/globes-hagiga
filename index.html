@@ -52,7 +52,7 @@
     <header class="header">
       <img
         src="https://images.globes.co.il/images/mobile/2018/white.svg"
-        class="logo desktopOnly"
+        class="loggo desktopOnly"
       />
     </header>
     <main>
@@ -165,7 +165,8 @@
               value=""
               placeholder="טלפון"
               type="tel"
-              pattern="[0-9-]{8,10}"
+              pattern="[0-9]{10,10}"
+              maxlength="10"
               class="form-input"
               required
               oninvalid="this.setCustomValidity('נא לרשום מספר טלפון בעל 10 ספרות')"

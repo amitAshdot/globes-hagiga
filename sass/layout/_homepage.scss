@@ -23,53 +23,13 @@ main {
   height: 95vh;
 
   @include respond(mini-desktop) {
-    background-size: 75%;
+    background-size: 95%;
     padding: 6rem 0rem 3rem;
+    background-position-y: 130px;
+    background-position-x: -70px;
     height: auto;
   }
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 25rem;
-}
-
-.bar-section {
-  background-color: $color-primary;
-  padding: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem 25rem;
-}
-.bar {
-  &__right {
-    &-title {
-      background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga.png");
-      width: 271px;
-      height: 63px;
-    }
-    &-subtitle {
-    }
-  }
-  &__left {
-    position: relative;
-
-    &-img {
-      background: url("https://amitashdot.github.io/globes-hagiga/images/cloud.png");
-      content: "";
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      width: 278px;
-      height: 258px;
-      top: 16px;
-      left: 8%;
-    }
-  }
-}
-
 .accordion {
   background-color: transparent;
   color: #000000;
@@ -106,40 +66,17 @@ main {
   font-size: 1.4rem;
 }
 
-// .package--details::after {
-//   content: '';
-//   border: solid #1a1a1a;
-//   border-width: 0 1px 1px 0;
-//   padding: 3px;
-//   transform: rotate(45deg);
-//   -webkit-transform: rotate(45deg);
-//   transition: transform 0.3s ease;
-//   position: absolute;
-//   margin-right: 10px;
-//   top: 50%;
-// }
-
 .infoBox-section {
   color: $color-white-real;
-  // background: url("https://amitashdot.github.io/globes-hagiga/images/baloon-01.png")
-  //   repeat $color-primary;
-  // background-size: 30%;
-  // padding: 20rem 3rem 3rem;
-  // background-position-y: 240px;
-  // background-position-x: 0px;
   display: flex;
   flex-direction: column;
-  // width: 100vw;
-  // height: 100vh;
   place-items: center;
   margin: auto;
   font-size: 3rem;
   line-height: 4.5rem;
 
   @include respond(mini-desktop) {
-    background-size: cover;
-    background-position-y: 190px;
-    background-position-x: 20px;
+    height: 29rem;
   }
 }
 .infoBox {
@@ -155,6 +92,9 @@ main {
   &-title {
     & > h2 {
       overflow-y: hidden;
+
+      & span {
+      }
     }
   }
   &-text {
@@ -164,6 +104,7 @@ main {
     font-weight: bold;
     &-sale {
       font-size: 4rem;
+      text-align: center;
     }
 
     & > p {
@@ -295,10 +236,6 @@ main {
   padding: 3.4rem 3rem;
   z-index: 10;
   font-family: "nextexitfot";
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   border-radius: 5px;
   transition: all 0.5s ease;
 
@@ -306,7 +243,7 @@ main {
     background: url(https://amitashdot.github.io/globes-hagiga/images/baloon-01.png)
       repeat #ef73ab fixed;
     background-size: contain;
-
+    max-width: 150rem;
     width: 100%;
     background-position: -130px -130px;
   }

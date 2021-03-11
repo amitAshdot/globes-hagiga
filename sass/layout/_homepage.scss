@@ -14,7 +14,7 @@
 header.header {
   position: absolute;
   left: 5rem;
-  bottom: 5rem;
+  top: 5rem;
 }
 
 main {
@@ -29,7 +29,7 @@ main {
 
   @include respond(mini-desktop) {
     background-size: 95%;
-    padding: 6rem 0rem 3rem;
+    padding: 6rem 0rem 1rem;
     background-position-y: 110px;
     background-position-x: -200px;
     height: auto;
@@ -317,13 +317,13 @@ main {
   @include respond(mini-desktop) {
     font-size: 1.92rem;
     overflow: hidden;
+    margin-bottom: 1rem;
   }
   &-right {
     width: 55%;
 
     @include respond(mini-desktop) {
       width: 100%;
-      margin-bottom: 1rem;
     }
   }
   &-left {
@@ -346,6 +346,7 @@ main {
   @include respond(mini-desktop) {
     padding: 3rem 0;
     text-align: right;
+    margin-bottom: 3rem;
   }
 
   &-title {
@@ -359,6 +360,9 @@ main {
       transform: translateY(10%);
     }
   }
+}
+.loggo {
+  margin: auto;
 }
 
 .footer {

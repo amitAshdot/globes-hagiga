@@ -242,6 +242,8 @@ main {
 }
 
 .form {
+  position: relative;
+
   background: url(https://amitashdot.github.io/globes-hagiga/images/baloon-01.png)
     repeat #ef73ab;
   background-size: contain;
@@ -297,6 +299,10 @@ main {
     border-radius: 5px;
     font-family: "nextexitfot";
 
+    &-error {
+      border: 1px solid $color-red;
+      background: $error-background;
+    }
     &:focus {
       outline: 0;
     }

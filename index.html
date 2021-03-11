@@ -156,6 +156,8 @@
               placeholder="שם מלא"
               class="form-input"
               required
+              oninvalid="this.setCustomValidity('נא לרשום שם מלא')"
+              oninput="setCustomValidity('')"
             />
             <input
               id="telephone1"
@@ -164,11 +166,11 @@
               placeholder="טלפון"
               type="tel"
               pattern="[0-9-]{8,10}"
-              maxlength="10"
               class="form-input"
               required
+              oninvalid="this.setCustomValidity('נא לרשום מספר טלפון בעל 10 ספרות')"
+              oninput="setCustomValidity('')"
             />
-
             <!-- <input
               id="emailaddress1"
               name="emailaddress1"
@@ -336,6 +338,51 @@
           }
         });
       }
+    </script>
+
+    <script>
+      (function() {
+        var name = document.getElementById("accountname");
+        var phone = document.getElementById("telephone1");
+        var form = document.getElementsByClassName("form");
+        var elem = document.createElement("div");
+        elem.id = "notify";
+        elem.style.display = "none";
+
+        form[0].appendChild(elem);
+
+        name.addEventListener("invalid", function(event) {
+          event.preventDefault();
+          if (!event.target.validity.valid) {
+            name.className = "form-input form-input-error";
+            elem.textContent = "אנא מלא/י את השדות בהתאם";
+            elem.className = "error";
+            elem.style.display = "block";
+          }
+        });
+
+        name.addEventListener("input", function(event) {
+          debugger;
+
+          name.className = "form-input";
+          elem.style.display = "none";
+        });
+
+        phone.addEventListener("invalid", function(event) {
+          event.preventDefault();
+          if (!event.target.validity.valid) {
+            phone.className = "form-input form-input-error";
+            elem.textContent = "אנא מלא/י את השדות בהתאם";
+            elem.className = "error";
+            elem.style.display = "block";
+          }
+        });
+
+        phone.addEventListener("input", function(event) {
+          phone.className = "form-input";
+          elem.style.display = "none";
+        });
+      })();
     </script>
   </body>
 </html>

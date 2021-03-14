@@ -3,16 +3,38 @@
     repeat $color-primary;
   background-size: 30%;
   padding: 6rem 3rem 3rem;
-  background-position-y: 240px;
+  background-position-y: -110px;
   background-position-x: 0px;
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 
   @include respond(mini-desktop) {
-    background-size: 95%;
-    padding: 3rem 0rem 1rem;
-    background-position-y: 110px;
+    background-size: 100%;
+
+    background-position-y: 0px;
     background-position-x: -200px;
-    height: auto;
+    height: 100vh;
+  }
+
+  & > h2 {
+    color: $color-white;
+    font-size: 8rem;
+
+    @include respond(mini-desktop) {
+      font-size: 5rem;
+    }
+  }
+
+  &__left {
+    font-size: 5rem;
+    @include respond(mini-desktop) {
+      font-size: 4rem;
+    }
   }
 }

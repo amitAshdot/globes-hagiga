@@ -101,8 +101,8 @@ main {
 .infoBox {
   &-image {
     background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga-finale.png");
-    width: 32rem;
-    height: 9rem;
+    width: 34rem;
+    height: 10rem;
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -111,7 +111,8 @@ main {
   &-title {
     & > h2 {
       overflow-y: hidden;
-      font-weight: 900 !important;
+      // font-weight: 900 !important;
+      font-weight: 100;
 
       @include respond(phone-small) {
         font-size: 3.8rem;

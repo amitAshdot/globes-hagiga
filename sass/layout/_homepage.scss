@@ -111,8 +111,7 @@ main {
   &-title {
     & > h2 {
       overflow-y: hidden;
-      // font-weight: 900 !important;
-      font-weight: 100;
+      font-weight: 900;
 
       @include respond(phone-small) {
         font-size: 3.8rem;

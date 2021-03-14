@@ -100,9 +100,9 @@ main {
 }
 .infoBox {
   &-image {
-    background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga-new.png");
-    width: 32rem;
-    height: 9rem;
+    background: url("https://amitashdot.github.io/globes-hagiga/images/hagiga-final.png");
+    width: 34rem;
+    height: 10rem;
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -110,7 +110,12 @@ main {
   }
   &-title {
     & > h2 {
+      font-weight: 900;
       overflow-y: hidden;
+      @include respond(mini-desktop) {
+        font-size: 4.5rem;
+        font-weight: 900;
+      }
       @include respond(phone-small) {
         font-size: 3.8rem;
       }
@@ -119,18 +124,24 @@ main {
     }
   }
   &-text {
-    font-size: 5.4rem;
+    font-size: 4.4rem;
     line-height: 4.5rem;
     overflow: hidden;
-    font-weight: bold;
+    font-weight: 900;
+
+    @include respond(mini-desktop) {
+      font-size: 4rem;
+    }
 
     @include respond(phone-small) {
-      font-size: 4.4rem;
+      font-size: 3rem;
     }
 
     &-sale {
       font-size: 4rem;
       text-align: center;
+      overflow: hidden;
+
       @include respond(phone-small) {
         font-size: 3rem;
       }
@@ -154,8 +165,6 @@ main {
     box-shadow: 10px 5px 5px black;
     font-family: "nextexitfot";
 
-    // transition: all 0.s ease;
-
     &:hover {
       cursor: pointer;
     }
@@ -177,7 +186,6 @@ main {
     }
   }
 }
-
 .arrows {
   position: relative;
 }

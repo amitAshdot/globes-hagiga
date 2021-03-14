@@ -1,0 +1,18 @@
+.receive-section {
+  background: url("https://amitashdot.github.io/globes-hagiga/images/baloon-01.png")
+    repeat $color-primary;
+  background-size: 30%;
+  padding: 6rem 3rem 3rem;
+  background-position-y: 240px;
+  background-position-x: 0px;
+  width: 100vw;
+  height: 95vh;
+
+  @include respond(mini-desktop) {
+    background-size: 95%;
+    padding: 3rem 0rem 1rem;
+    background-position-y: 110px;
+    background-position-x: -200px;
+    height: auto;
+  }
+}

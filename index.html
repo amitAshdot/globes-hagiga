@@ -38,7 +38,7 @@
     <link
       rel="preload"
       as="image"
-      href="https://amitashdot.github.io/globes-hagiga/images/hagiga-new.png"
+      href="https://amitashdot.github.io/globes-hagiga/images/hagiga-finale.png"
     />
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -140,7 +140,7 @@
               type="hidden"
               id="returnpath"
               name="returnpath"
-              value="http://www.google.com"
+              value="/thank-you.html"
             />
             <input
               type="hidden"
@@ -303,7 +303,6 @@
 
         scroll(loop);
       };
-
       // Call the loop for the first time
       loop();
 
@@ -340,7 +339,8 @@
         });
       }
     </script>
-
+    <!-- END ACCORDION HANDLE -->
+    <!--  HANDLE ERROR -->
     <script>
       (function() {
         var name = document.getElementById("accountname");
@@ -383,5 +383,26 @@
         });
       })();
     </script>
+    <!--  HANDLE ERROR -->
+    <!-- <script>
+      const changeBF = () => {
+        let bg = document.getElementsByTagName("main");
+        let horDistance = 0;
+        // let verDistance = 0;
+        var x = setInterval(
+          function() {
+            const horizontalDifference = `${horDistance}px`;
+            // const verticalDifference = `-${verDistance}px`;
+            bg[0].style.backgroundPositionX = horizontalDifference;
+            // bg[0].style.backgroundPositionY = verticalDifference;
+            horDistance += 0.4;
+            verDistance += 0.2;
+          },
+
+          100
+        );
+      };
+      changeBF();
+    </script> -->
   </body>
 </html>

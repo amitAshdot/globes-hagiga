@@ -112,6 +112,9 @@ main {
     & > h2 {
       font-weight: 900;
       overflow-y: hidden;
+      @include respond(mini-desktop) {
+        font-size: 5rem;
+      }
       @include respond(phone-small) {
         font-size: 3.8rem;
       }

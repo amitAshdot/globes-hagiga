@@ -114,8 +114,8 @@ $breakpoint argument choices
 */
 @mixin respond($breakpoint) {
   @if $breakpoint==phone-small {
-    @media only screen and (max-width: 26em) {
-      // 350px - iphone 5 (415px)
+    @media only screen and (max-width: 21em) {
+      // 336px - iphone 5 (320px)
       @content;
     }
   }

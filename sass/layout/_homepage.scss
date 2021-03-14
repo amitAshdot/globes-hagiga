@@ -126,9 +126,12 @@ main {
     overflow: hidden;
     font-weight: 900 !important;
 
+    @include respond(mini-desktop) {
+      font-size: 4rem;
+    }
+
     @include respond(phone-small) {
-      font-size: 4.4rem;
-      font-weight: bold;
+      font-size: 3rem;
     }
 
     &-sale {

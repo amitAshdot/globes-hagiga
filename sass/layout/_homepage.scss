@@ -110,9 +110,8 @@ main {
   }
   &-title {
     & > h2 {
-      overflow-y: hidden;
       font-weight: 900;
-
+      overflow-y: hidden;
       @include respond(phone-small) {
         font-size: 3.8rem;
       }
@@ -124,7 +123,7 @@ main {
     font-size: 4.4rem;
     line-height: 4.5rem;
     overflow: hidden;
-    font-weight: 900 !important;
+    font-weight: 900;
 
     @include respond(mini-desktop) {
       font-size: 4rem;

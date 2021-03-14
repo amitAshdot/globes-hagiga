@@ -78,6 +78,9 @@ main {
 }
 .panel {
   font-size: 1.4rem;
+  @include respond(mini-desktop) {
+    font-size: 2rem;
+  }
 }
 
 .infoBox-section {
@@ -293,10 +296,12 @@ main {
   }
   &-title {
     color: white;
-    font-size: 3.4rem;
+    //   font-size: 3.4rem;
+    font-size: 3.2rem;
 
     @include respond(phone-small) {
-      font-size: 2.7rem;
+      // font-size: 2.7rem;
+      font-size: 2.3rem;
     }
   }
   &-contact {
@@ -456,19 +461,21 @@ main {
   justify-content: space-around;
   font-size: 2rem;
 
-  &-links {
-    display: flex;
-    padding: 0.5rem;
-  }
-
   @include respond(mini-desktop) {
     background: $color-grey-dark-3;
     color: $color-white;
   }
+  &-links {
+    display: flex;
+    padding: 0.5rem;
+  }
+  &-contact {
+    font-weight: bolder;
+  }
 }
 /* unvisited link */
 a:link {
-  color: $color-grey-dark-4;
+  color: $color-grey-dark-3;
   padding: 0.5rem;
   text-decoration: none;
 
